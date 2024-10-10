@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: django-backend-service
+spec:
+  selector:
+    app: django-backend
+  type: NodePort
+  ports:
+    - port: {{ .Values.service.backend.port }}
+      targetPort: {{ .Values.service.backend.port }}
+      nodePort: {{ .Values.service.backend.nodePort }}

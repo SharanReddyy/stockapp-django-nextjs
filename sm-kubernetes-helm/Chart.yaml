@@ -1,0 +1,10 @@
+apiVersion: v2
+name: sm-kubernetes
+description: A Helm chart for Kubernetes setup
+version: 0.1.0
+appVersion: "1.0"
+
+dependencies:
+  - name: grafana
+    version: "8.0.0"  # Replace with the desired Grafana chart version
+    repository: "https://grafana.github.io/helm-charts"
