@@ -275,9 +275,9 @@ alertmanager:
   image: "prom/alertmanager:v0.21.0"
   smtp:
     host: "smtp.gmail.com:587"
-    from: "sai.sharan@sigmoidanalytics.com"
-    username: "sai.sharan@sigmoidanalytics.com"
-  receiverEmail: "sai.sharan@sigmoidanalytics.com"
+    from: ""
+    username: ""
+  receiverEmail: ""
   service:
     port: 9093
     nodePort: 31001
